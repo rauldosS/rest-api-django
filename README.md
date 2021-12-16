@@ -164,7 +164,12 @@ View: Descreve qual dado será apresentado
 Serializar: Descreve como o dado será apresentado (JSON)
 Model: Descreve as entidades da lógica do seu problema
 
+### Django's architecture
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/04.png?raw=true)
+
+### DRF's architecture
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/05.png?raw=true)
+
 
 🔗 []()
 🔗 []()
