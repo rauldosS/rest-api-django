@@ -146,8 +146,13 @@ Python
 
 -Em .\school\settings.py adicione manualmente em INSTALLED_APPS:
 
-    - 'rest_framework'
-    - 'grades.apps.GradesConfig'
+```python
+INSTALLED_APPS = [
+    ...,
+    'rest_framework'
+    'grades.apps.GradesConfig'
+]
+```
 
 🔗 [Configurações](https://www.django-rest-framework.org/api-guide/settings/)
 
