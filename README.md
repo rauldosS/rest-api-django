@@ -115,31 +115,31 @@ $ .\env\Scripts\activate
 Python
 
 ```bash
-\$ pip install django
+$ pip install django
 ```
 ```bash
-\$ pip install --upgrade pip
+$ pip install --upgrade pip
 ```
 ```bash
-\$ pip install djangorestframework
+$ pip install djangorestframework
 ```
 
 ### Criando projeto
 
 ```bash
-\$ django-admin startproject school .
+$ django-admin startproject school .
 ```
 
 ### Criando apps 
 
 ```bash
-\$ py .manage.py 
+$ py .manage.py 
 ```
 
 ### Sincronização inicial do banco de dados
 
 ```bash
-\$ py .\manage.py migrate
+$ py .\manage.py migrate
 ```
 
 ### Configuração
@@ -198,19 +198,19 @@ Podem ou não ser uma tabela no banco de dados
 #### Migrações
 
 - Passo 1: Mudar o seu modelo (models.py)
-- Passo 2: rodar ```bash \$ manage.py makemigrations ``` para gerar os arquivos de migração
-- Passo 3: rodar ```bash \$ manage.py migrate ``` para aplicar as mudanças no banco de dados
+- Passo 2: rodar ```bash $ manage.py makemigrations ``` para gerar os arquivos de migração
+- Passo 3: rodar ```bash $ manage.py migrate ``` para aplicar as mudanças no banco de dados
 
-- Django Shell ```bash \$ py manage.py shell ```
+- Django Shell ```bash $ py manage.py shell ```
 
 Consultar estudantes
-```bash \$ from grades.models import Student ```
-```bash \$ Student ```
+```bash $ from grades.models import Student ```
+```bash $ Student ```
 
-```bash \$ Student.objects.all() ```
+```bash $ Student.objects.all() ```
 
 Registrar estudante
-```bash \$ Student.objects.create(first_name="Raul", last_name="Moraes", age=10) ```
+```bash $ Student.objects.create(first_name="Raul", last_name="Moraes", age=10) ```
 
 #### Serializer
 
