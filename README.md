@@ -18,7 +18,7 @@ Programa 1 pode ser acessível em vários dispositivos (lógica de negócio e co
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/02.png?raw=true)
 
 Programa 1 é consumido por outras empresas
-![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/02.png?raw=true)
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/03.png?raw=true)
 
 ## API == Serviço
 
@@ -47,6 +47,7 @@ Para utilizar esse serviço, você precisa entender como ele funciona
 🔗 [Github examples](https://github.com/public-apis/public-apis)
 🔗 [Rapidapi examples](https://rapidapi.com/blog/most-popular-apis-2018/)
 
+# API
 ## Métodos HTTP
 
 - GET: Retorna recursos do servidor. Não altera o servidor
@@ -59,7 +60,92 @@ Para utilizar esse serviço, você precisa entender como ele funciona
 - É um estilo de arquitetura
 - Série de padrões/restrições para construir uma API
 
-asasdasdasd
-
 🔗 [Sua API não é RESTful: Entenda por quê](https://blog.geekhunter.com.br/sua-api-nao-e-restful-entenda-por-que/)
 🔗 [10 Best Practices for Better RESTful API](https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291)
+
+## Representação dos Dados
+
+- JSON
+- XML
+- ...
+
+### JSON
+- JavaScript Object Notation
+- Formato utilizado pelo padrão REST
+- Modelo de dados
+- O formato JSON é sinteticamente idêntico ao código para criar objetos JavaScript
+
+🔗 [JSON](https://www.json.org/json-en.html)
+🔗 [JSON em Python](https://docs.python.org/pt-br/3/library/json.html)
+
+# DJANGO REST FRAMEWORK
+
+Django: Web Framework para Python
+
+DRF permite que uma aplicação Django se comporte com uma REST API
+
+Django REST Framework é um kit de ferramentas poderoso e flexível para criar Web APIS
+
+### Por que Django/DRF?
+
+- Rápido de fazer uma aplicação
+- Possui várias ferramentas
+- Versátil
+- Escalável
+
+### Links
+
+🔗 [Quick Start]()
+🔗 [Tutorial]()
+🔗 [Web browsable API](https://restframework.herokuapp.com/)
+
+# Criando um Projeto (School)
+
+### Criar e ativar ambiente virtual
+
+$ python -m venv env
+$ .\env\Scripts\activate
+### Instalar dependências
+
+Python
+
+\$ pip install django
+\$ pip install --upgrade pip
+\$ pip install djangorestframework
+
+### Criando projeto
+
+\$ django-admin startproject school .
+
+### Criando apps 
+
+\$ py .manage.py 
+
+### Sincronização inicial do banco de dados
+
+\$ py .\manage.py migrate
+
+### Configuração
+
+-Em .\school\settings.py adicione manualmente em INSTALLED_APPS:
+
+    - 'rest_framework'
+    - 'grades.apps.GradesConfig'
+
+🔗 [Configurações](https://www.django-rest-framework.org/api-guide/settings/)
+
+### Arquitetura
+
+Arquitetura: Model, Serializar e View (MSC?)
+
+View: Descreve qual dado será apresentado
+Serializar: Descreve como o dado será apresentado (JSON)
+Model: Descreve as entidades da lógica do seu problema
+
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/04.png?raw=true)
+
+🔗 []()
+🔗 []()
+🔗 []()
+
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/02.png?raw=true)
