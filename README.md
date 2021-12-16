@@ -105,6 +105,8 @@ Django REST Framework é um kit de ferramentas poderoso e flexível para criar W
 
 ```cmd
 $ python -m venv env
+```
+```bash
 $ .\env\Scripts\activate
 ```
 
