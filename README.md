@@ -149,7 +149,7 @@ Python
 ```python
 INSTALLED_APPS = [
     ...,
-    'grades.apps.GradesConfig'
+    'rest_framework'
 ]
 ```
 
@@ -194,6 +194,81 @@ Descreve as entidades lógicas do seu problema.
 Podem ou não ser uma tabela no banco de dados
 
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/06.png?raw=true)
+
+#### Migrações
+
+- Passo 1: Mudar o seu modelo (models.py)
+- Passo 2: rodar ```bash \$ manage.py makemigrations ``` para gerar os arquivos de migração
+- Passo 3: rodar ```bash \$ manage.py migrate ``` para aplicar as mudanças no banco de dados
+
+- Django Shell ```bash \$ py manage.py shell ```
+
+Consultar estudantes
+```bash \$ from grades.models import Student ```
+```bash \$ Student ```
+
+```bash \$ Student.objects.all() ```
+
+Registrar estudante
+```bash \$ Student.objects.create(first_name="Raul", last_name="Moraes", age=10) ```
+
+#### Serializer
+
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/07.png?raw=true)
+
+## Class Based Views (CBV)
+
+Class Based Views fornecem uma maneira alternativa de implementar Views com objetos Python, ao invés de funções.
+
+Não substitui as function based view
+
+Reutilizar código através de:
+- Herança
+- Mixins
+
+💡 Evita fazer um branch com if's
+
+🔗 [Classy Django REST Framework](https://www.cdrf.co/)
+
+IDE que possa navegar nas classes do Django e do DRF
+
+Generics, Mixins, ViewSets...
+
+## Ednpoint
+
+É a URL onde seu serviço pode ser acessado por uma aplicação cliente
+
+Cliente -> [endpoints] <- API
+
+### URL
+
+URL - Uniform Resource Identifier (Identificador de Recursos Universal)
+
+- Acesso:
+    - https://meusite.com.br/api/v1/produtos
+    - https://meusite.com.br/api/v1/categorias
+
+- Obs.: Estas URIs são os endpoints
+
+#### Chame os substantivos
+
+- Sempre que falar em endpoint lembre-se:
+    - pode representar uma coleção de registros;
+    - ou um registro individual
+
+- Coleção: /api/v1/produtos
+- Individual: /api/v1/produtos/16
+
+#### Ações por Verbo
+
+- RESTfull fornecem estratégias para lidar com as ações de CRUD (Create, Read, Update e Delete);
+- Métodos HTTP mapeados da seguinte forma:
+    - GET       /api/v1/produtos          Retorna todos os produtos
+    - GET       /api/v1/produtos/12       Retorna todos o produto com ID 12
+    - POST      /api/v1/produtos          Enviar um produto
+    - POST      /api/v1/produtos/12       Atualiza o produto com ID 12
+    - PATCH     /api/v1/produtos/12       Atualiza parcialmente o produto com ID 12 
+    - DELETE    /api/v1/produtos/12       Delete o produto com ID 12
 
 🔗 []()
 🔗 []()
