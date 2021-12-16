@@ -263,12 +263,17 @@ URL - Uniform Resource Identifier (Identificador de Recursos Universal)
 
 - RESTfull fornecem estratégias para lidar com as ações de CRUD (Create, Read, Update e Delete);
 - Métodos HTTP mapeados da seguinte forma:
-    - GET       /api/v1/produtos          Retorna todos os produtos
-    - GET       /api/v1/produtos/12       Retorna todos o produto com ID 12
-    - POST      /api/v1/produtos          Enviar um produto
-    - POST      /api/v1/produtos/12       Atualiza o produto com ID 12
-    - PATCH     /api/v1/produtos/12       Atualiza parcialmente o produto com ID 12 
-    - DELETE    /api/v1/produtos/12       Delete o produto com ID 12
+    - GET   |      /api/v1/produtos      | Retorna todos os produtos
+    | :---: | :---: | :---: |
+    - GET   |      /api/v1/produtos/12   | Retorna todos o produto com ID 12
+    | :---: | :---: | :---: |
+    - POST  |     /api/v1/produtos       | Enviar um produto
+    | :---: | :---: | :---: |
+    - POST  |     /api/v1/produtos/12    | Atualiza o produto com ID 12
+    | :---: | :---: | :---: |
+    - PATCH |    /api/v1/produtos/12     | Atualiza parcialmente o produto com ID 12 
+    | :---: | :---: | :---: |
+    - DELETE|   /api/v1/produtos/12      | Delete o produto com ID 12
 
 🔗 []()
 🔗 []()
