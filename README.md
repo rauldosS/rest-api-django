@@ -11,13 +11,13 @@ mas apenas usar seus serviços"
 
 ## Esquemas
 
-<p align="center">Programa 1 contém lógica de negócio e comunicação com banco</p>
+Programa 1 contém lógica de negócio e comunicação com banco
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/01.png?raw=true)
 
-<p align="center">Programa 1 pode ser acessível em vários dispositivos (lógica de negócio e comunicação com banco)</p>
+Programa 1 pode ser acessível em vários dispositivos (lógica de negócio e comunicação com banco)
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/02.png?raw=true)
 
-<p align="center">Programa 1 é consumido por outras empresas</p>
+Programa 1 é consumido por outras empresas
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/02.png?raw=true)
 
 ## API == Serviço
@@ -46,3 +46,9 @@ Para utilizar esse serviço, você precisa entender como ele funciona
 
 🔗 [Github examples](https://github.com/public-apis/public-apis)
 🔗 [Rapidapi examples](https://rapidapi.com/blog/most-popular-apis-2018/)
+
+## Métodos HTTP
+
+- GET: Retorna recursos do servidor. Não altera o servidor
+- POST/PUT: Criar e editar recursos no servidor
+- DELETE: Deletar recursos do servidor
