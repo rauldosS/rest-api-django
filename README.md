@@ -149,7 +149,6 @@ Python
 ```python
 INSTALLED_APPS = [
     ...,
-    'rest_framework'
     'grades.apps.GradesConfig'
 ]
 ```
@@ -170,9 +169,34 @@ Model: Descreve as entidades da lógica do seu problema
 ### DRF's architecture
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/05.png?raw=true)
 
+## Roteamento das URl
+
+- Rotas do Programa
+- Arquivos urls.py
+
+### View
+
+Descreve qual dados são apresentados.
+
+Uma View é simplesmente uma função Python que recebe uma request e retorna uma response.
+
+Uma resposta pode ser um conteúdo HTML de uma página Web, um redirecionamento, um error 404,
+um documento XML, uma imagem.
+
+A visualização em si contém qualquer lógica arbitrária para retornar essa resposta.
+
+Como estamos trabalhando com REST APIs, o conteúdo da resposta HTTP deve ser em JSON.
+
+### Modal
+
+Descreve as entidades lógicas do seu problema.
+
+Podem ou não ser uma tabela no banco de dados
+
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/06.png?raw=true)
 
 🔗 []()
 🔗 []()
 🔗 []()
 
-![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/02.png?raw=true)
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/0.png?raw=true)
