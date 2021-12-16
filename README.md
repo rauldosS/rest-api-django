@@ -52,3 +52,11 @@ Para utilizar esse serviço, você precisa entender como ele funciona
 - GET: Retorna recursos do servidor. Não altera o servidor
 - POST/PUT: Criar e editar recursos no servidor
 - DELETE: Deletar recursos do servidor
+
+## REST APIs
+
+- Design de APIs para web
+- É um estilo de arquitetura
+- Série de padrões/restrições para construir uma API
+
+🔗 [Sua API não é RESTful: Entenda por quê](https://blog.geekhunter.com.br/sua-api-nao-e-restful-entenda-por-que/)
