@@ -60,3 +60,4 @@ Para utilizar esse serviço, você precisa entender como ele funciona
 - Série de padrões/restrições para construir uma API
 
 🔗 [Sua API não é RESTful: Entenda por quê](https://blog.geekhunter.com.br/sua-api-nao-e-restful-entenda-por-que/)
+🔗 [10 Best Practices for Better RESTful API](https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291)
