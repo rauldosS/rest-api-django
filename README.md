@@ -103,7 +103,7 @@ Django REST Framework é um kit de ferramentas poderoso e flexível para criar W
 
 ### Criar e ativar ambiente virtual
 
-```cmd
+```bash
 $ python -m venv env
 ```
 ```bash
@@ -114,21 +114,33 @@ $ .\env\Scripts\activate
 
 Python
 
+```bash
 \$ pip install django
+```
+```bash
 \$ pip install --upgrade pip
+```
+```bash
 \$ pip install djangorestframework
+```
 
 ### Criando projeto
 
+```bash
 \$ django-admin startproject school .
+```
 
 ### Criando apps 
 
+```bash
 \$ py .manage.py 
+```
 
 ### Sincronização inicial do banco de dados
 
+```bash
 \$ py .\manage.py migrate
+```
 
 ### Configuração
 
