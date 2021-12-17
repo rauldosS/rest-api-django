@@ -112,14 +112,20 @@ $ .\env\Scripts\activate
 
 ### Instalar dependências
 
-Python
+```bash
+$ pip freeze > requirements.txt
+```
 
 ```bash
 $ pip install django
+$ pip install djandorestframework
+$ pip install markdown
+$ pip install django-filter
 ```
 ```bash
 $ pip install --upgrade pip
 ```
+
 ```bash
 $ pip install djangorestframework
 ```
@@ -240,7 +246,13 @@ Generics, Mixins, ViewSets...
 
 Cliente -> [endpoints] <- API
 
-### URL
+# Request
+
+HTTP + URL
+
+Além de uma requisição é uma Query string.
+
+## URL
 
 URL - Uniform Resource Identifier (Identificador de Recursos Universal)
 
@@ -250,7 +262,7 @@ URL - Uniform Resource Identifier (Identificador de Recursos Universal)
 
 - Obs.: Estas URIs são os endpoints
 
-#### Chame os substantivos
+### Chame os substantivos
 
 - Sempre que falar em endpoint lembre-se:
     - pode representar uma coleção de registros;
@@ -259,7 +271,7 @@ URL - Uniform Resource Identifier (Identificador de Recursos Universal)
 - Coleção: /api/v1/produtos
 - Individual: /api/v1/produtos/16
 
-#### Ações por Verbo
+### Ações por Verbo
 
 - RESTfull fornecem estratégias para lidar com as ações de CRUD (Create, Read, Update e Delete);
 - Métodos HTTP mapeados da seguinte forma:
@@ -273,6 +285,87 @@ URL - Uniform Resource Identifier (Identificador de Recursos Universal)
     | PATCH  |   /api/v1/produtos/12 | Atualiza parcialmente o produto com ID 12  |
     | DELETE |   /api/v1/produtos/12 | Delete o produto com ID 12 |
 
+## Query string
+
+```bash
+api/v1/produtos?format=xml
+```
+```bash
+api/v1/produtos?order=desc&limite=10
+```
+
+- Tudo que está após o símbolo de interrogação (? - question mark) são:
+    - Conjunto de pares chave/valor que podem ser utilizadas pela API para alterar os dados de acordo com estes parâmetros.
+    - Esta forma de passar dados em uma requisição é chamada de "query string".
+
+## Boas práticas
+
+```bash
+api/v1/produtos?format=xml
+```
+
+- Prover diretamente o formato desejado, conforme:
+
+```bash
+api/v1/produtos.xml
+```
+
+- Basta que prestemos atenção no cabeçalho da requisição HTTP, que nos foi enviado
+
+```bash
+Accept: application/xml
+```
+
+### Cabeçalhos HTTP - Accept
+
+- Especifica o formato do arquivo que o (solicitante) quer:
+    - Accept: application/xml
+    - Accept: application/json
+    - Accept: application/pdf
+
+- Especifica a língua do conteúdo, por exemplo:
+    - English;
+    - Portuguese;
+    - Spanish;
+
+- Cabeçalhos HTTP - Accept - Cache
+    - Especifica se o conteúdo pode ser consumido:
+        - do cache;
+        - tempo que o cache é atualizado.
+
+- Dar atenção
+    - Nem sempre precisamos prestar atenção no cabeçalho de um request;
+    - Diferentes métodos HTTP enviam dados de formas diferentes;
+
+# Response
+
+Resposta do servidor ao cliente.
+
+## Status Code
+
+O servidor utiliza um código desse na resposta para indicar o que aconteceu.
+
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/08.png?raw=true)
+
+- Os códigos estão entre 100 e 500:
+    - 1xx - Informativos
+    - 2xx - Indicativos de sucesso
+    - 3xx - Redirecionamentos
+    - 4xx - Erros do cliente na hora de fazer a solicitação
+    - 5xx - Erros no lado do servidor
+
+- Códigos específicos
+    - 200 - Tudo ocorreu corretamente
+    - 301 - Indica redirecionamento permanente
+    - 401 - Não autorizado
+    - 404 - O recurso solicitado não foi encontrado no servidor
+    - 403 - 405 - O URL pode ser requisitada apenas com o GET e não POST.
+    - 500 - 509 - Erro do servidor
+
+
+##
+
+- 
 🔗 []()
 🔗 []()
 🔗 []()

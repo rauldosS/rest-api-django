@@ -19,11 +19,12 @@ from django.urls import path, include
 from grades.views import StudentViewSet
 from rest_framework import routers
 
-router = routers.DefaultRouter()
-router.register(r'grades', StudentViewSet)
-
+api_router = routers.DefaultRouter()
+api_router.register(r'grades', StudentViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(api_router.urls)),
+    path('api/v1/', include('courses.urls')),
+    path('auth/', include('rest_framework.urls')),
     path('admin/', admin.site.urls)
 ]

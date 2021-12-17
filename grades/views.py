@@ -10,7 +10,7 @@ class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
 
-    http_method_names = ['get', 'head']
+    # http_method_names = ['get', 'head']
 
 # def grades(request):
 #     if request.method == 'GET':
